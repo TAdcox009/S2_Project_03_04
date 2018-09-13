@@ -1,0 +1,39 @@
+﻿@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+    Author: Todd Adcox Jr
+    Date:   9/12/18
+   
+   Filename: lake_styles.css
+
+*/
+@font-face {
+    font-family: Champagne;
+    src: url('cac_champagne.woff');
+    src: url('cac_champagne.ttf');
+}
+
+@font-face {
+    font-family: Grunge;
+    src: url('1942.woff');
+    src: url('1942.ttf');
+}
+
+@font-face {
+    font-family: Dobkin;
+    src: url('DobkinPlain.woff');
+    src: url('DobkinPlain.ttf');
+}
+
+html {
+    background-color: rgb(212, 158, 194);
+}
+
+body {
+    background-color: rgb(212, 186, 214);
+}
