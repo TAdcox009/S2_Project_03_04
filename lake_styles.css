@@ -19,21 +19,106 @@
 }
 
 @font-face {
-    font-family: Grunge;
-    src: url('1942.woff');
-    src: url('1942.ttf');
-}
-
-@font-face {
     font-family: Dobkin;
     src: url('DobkinPlain.woff');
     src: url('DobkinPlain.ttf');
 }
 
+/* this is changing the color of the whole website */
 html {
-    background-color: rgb(212, 158, 194);
+    background-color: rgb(231, 235, 218);
 }
 
+/* this is changing the font size and align the text to the center */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+/* this is changing the color of only the body */
 body {
     background-color: rgb(212, 186, 214);
+}
+
+/* this is changing the color for the nav and setting the font to dobkin */
+nav {
+    color: rgb(138, 83, 126);
+    font-family: Dobkin;
+    src: url('DobkinPlain.woff');
+    src: url('DobkinPlain.ttf');
+
+}
+
+/* this is changing the color for the nav thats nested inside the header */
+header>nav {
+    background-color: rgb(117, 57, 104);
+
+}
+
+/* this is changing the color, font weight, font, and font size for the section with the id of leftcol  */
+section#leftcol {
+    background-color: rgb(190, 140, 182);
+    font-family: Champagne;
+    src: url('cac_champagne.woff');
+    src: url('cac_champagne.ttf');
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+section#leftcol aside:first-of-type {
+    background-color: rgb(150, 100, 180);
+}
+
+section#leftcol aside:nth-of-type(2) {
+    background-color: rgb(157, 106, 183);
+    margin-left: 1em;
+    margin-right: 3em;
+}
+
+
+
+/* this is adding padding to the top, bottom, and right of the blockquote as well as changing the font to dobkin */
+blockquote {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+    font-family: Dobkin;
+    src: url('DobkinPlain.woff');
+    src: url('DobkinPlain.ttf');
+}
+
+/* this is adding quotation marks before and after the text in the block quote, it is also setting the font, font size, and font wieght of the quotation marks. */
+blockquote::before {
+    content: open-quote;
+    font-family: Dobkin;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+blockquote::after {
+    content: close-quote;
+    font-family: Dobkin;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+/* this is removing the underlining from the hypertext link  */
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+    line-height: 2.2em;
+    font-size: 1.2em;
+}
+
+/* when you hover over the link it makes it the color below */
+nav a:active,
+nav a:hover {
+    color: rgb(164, 33, 197);
+}
+
+
+
+/* this is changing the color of the footer */
+footer {
+    background-color: rgb(90, 40, 79);
 }
